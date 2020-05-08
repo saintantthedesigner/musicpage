@@ -473,6 +473,8 @@
 
     <!-- Contact Section
     ================================================= -->
+        <!-- Contact Section
+    ================================================= -->
     <section id="contact">
       <div class="container wrapper">
         <div class="headline">
@@ -482,7 +484,13 @@
           <div class="col-sm-7 col-sm-offset-1">
             <div class="send-email">
               <!--Contact Form-->
-              <form class="contact-form">
+              <form
+                name="contact-form"
+                method="POST"
+                class="contact-form"
+                data-netlify="true"
+                id="contact-form"
+              >
                 <div class="form-group">
                   <input
                     id="contact-name"
@@ -527,9 +535,9 @@
                     data-error="Please,leave us a message."
                   ></textarea>
                 </div>
+                <input type="submit" class="btn btn-secondary" value="Send message"/>
               </form>
               <!--Contact Form End-->
-              <button class="btn btn-secondary">Send message</button>
             </div>
           </div>
           <div class="col-sm-3">
